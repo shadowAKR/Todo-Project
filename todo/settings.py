@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todo',
-        'USER':'avodha',
-        'PASSWORD':'1234',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'todo_local_db',
+        'USER':'root',
+        'PASSWORD':'Excellentboy22597@',
         'HOST':'localhost'
     }
 }
@@ -122,8 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
-STATIC_ROOT=os.path.join(BASE_DIR,'assets')
+STATIC_ROOT=os.path.join(BASE_DIR,'static')
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 # Default primary key field type
